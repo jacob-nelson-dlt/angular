@@ -1,25 +1,31 @@
 ![31c9262e-aeea-4403-9086-3c8b88885cab](https://github.com/hugeicons/hugeicons-react/assets/130147052/ff91f2f0-095a-4c6d-8942-3af4759f9021)
 
-# @hugeicons/angular
+# Hugeicons - Free Angular Icon Library
 
-> HugeIcons Pro Angular Component Library - Beautiful and customizable icons for your Angular applications
+Welcome to Hugeicons, your source for over 4,000 free stroke icons for Angular. Designed to simplify your development workflow, these icons are fully customizable and easy to use, making them a perfect fit for both Angular developers and designers alike.
 
-## What is HugeIcons?
+What sets Hugeicons apart is the careful attention to detail—each icon is crafted to be incredibly beautiful and consistent, ensuring that your designs look user-friendly and professional.
 
-HugeIcons is a comprehensive icon library designed for modern web and mobile applications. The free package includes 4,000+ carefully crafted icons in the Stroke Rounded style, while the pro version offers over 36,000 icons across 9 unique styles.
+For those looking for more variety, the Pro version offers access to over 36,000 icons across 9 unique styles, providing a reliable way to enhance your Angular projects without any hassle.
+
+## @hugeicons/angular
+
+> Hugeicons Angular component library - Beautiful and customizable icons for your Angular applications
+
 
 ### Key Highlights
-- **4,000+ Free Icons**: Extensive collection of Stroke Rounded icons covering essential UI elements, actions, and concepts
-- **Pixel Perfect**: Every icon is crafted on a 24x24 pixel grid ensuring crisp, clear display at any size
-- **Customizable**: Easily adjust colors, sizes, and styles to match your design needs
-- **Regular Updates**: New icons added regularly to keep up with evolving design trends
+- **4,000+ Free Icons**: Perfect for personal and commercial Angular projects, no strings attached.
+- **Easy Customizations**: Change size, color, and even add animations in seconds.
+- **Optimized for Angular**: Simple and lightweight for your Angular apps.
+- **Rotation and Animation**: Add a dynamic touch with rotation and animation options.
+- **Scalable and Clean**: Icons stay sharp at any size.
 
 > 📚 **Looking for Pro Icons?** Check out our comprehensive documentation at [docs.hugeicons.com](https://docs.hugeicons.com) for detailed information about pro icons, styles, and advanced usage.
 
 ![a40aa766-1b04-4a2a-a2e6-0ec3c492b96a](https://github.com/hugeicons/hugeicons-react/assets/130147052/f82c0e0e-60ae-4617-802f-812cdc7a58da)
 
 ## Table of Contents
-- [What is HugeIcons?](#what-is-hugeicons)
+- [What is Hugeicons?](#what-is-hugeicons)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -38,12 +44,12 @@ HugeIcons is a comprehensive icon library designed for modern web and mobile app
 
 ## Features
 
-- 🎨 Customizable colors and sizes
-- 💪 TypeScript support with full type definitions
-- 🎯 Tree-shakeable for optimal bundle size
-- 📦 Multiple bundle formats (ESM, CJS, UMD)
-- ⚡ Lightweight and optimized
-- 🔄 Alternate icon support for dynamic interactions
+- Customizable colors and sizes
+- TypeScript support with full type definitions
+- Tree-shakeable for optimal bundle size
+- Multiple bundle formats (ESM, CJS, UMD)
+- Lightweight and optimized
+- Alternate icon support for dynamic interactions
 
 ## Installation
 
@@ -285,4 +291,4 @@ This project is licensed under the [MIT License](LICENSE.md).
 ## Related
 
 - [@hugeicons/core-free-icons](https://www.npmjs.com/package/@hugeicons/core-free-icons) - Free icon package
-- [HugeIcons Website](https://hugeicons.com) - Browse all available icons 
+- [Hugeicons Website](https://hugeicons.com) - Browse all available icons 
