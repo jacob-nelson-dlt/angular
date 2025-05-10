@@ -17,6 +17,7 @@ export interface IconData {
 export interface HugeiconsProps {
   size?: string | number;
   strokeWidth?: number;
+  absoluteStrokeWidth?: boolean;
   icon: IconSvgObject;
   altIcon?: IconSvgObject;
   color?: string;

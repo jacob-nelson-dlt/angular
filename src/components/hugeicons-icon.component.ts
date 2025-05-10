@@ -22,7 +22,8 @@ import { IconSvgObject } from '../lib/types';
         [attr.fill]="path.fill"
         [attr.opacity]="path.opacity"
         [attr.fill-rule]="path.fillRule"
-        [attr.stroke-width]="strokeWidth"
+        [attr.stroke]="path.stroke"
+        [attr.stroke-width]="path.strokeWidth"
       />
     </svg>
   `,
@@ -31,7 +32,8 @@ import { IconSvgObject } from '../lib/types';
 
 export class HugeiconsIconComponent implements OnInit, OnChanges {
   @Input() size: string | number = 24;
-  @Input() strokeWidth = 1.5;
+  @Input() strokeWidth?: number;
+  @Input() absoluteStrokeWidth = false;
   @Input() icon!: IconSvgObject;
   @Input() altIcon?: IconSvgObject;
   @Input() color = 'currentColor';
@@ -43,6 +45,8 @@ export class HugeiconsIconComponent implements OnInit, OnChanges {
     fill: string;
     opacity?: string;
     fillRule?: string;
+    stroke?: string;
+    strokeWidth?: number;
   }> = [];
 
   ngOnInit() {
@@ -61,12 +65,21 @@ export class HugeiconsIconComponent implements OnInit, OnChanges {
       return;
     }
 
+    const calculatedStrokeWidth = this.strokeWidth !== undefined
+      ? (this.absoluteStrokeWidth ? (Number(this.strokeWidth) * 24) / Number(this.size) : this.strokeWidth)
+      : undefined;
+
+    const strokeProps = calculatedStrokeWidth !== undefined ? {
+      strokeWidth: calculatedStrokeWidth,
+      stroke: 'currentColor'
+    } : {};
+
     this.paths = currentIcon.map(([_, attrs]) => ({
       d: attrs['d'],
       fill: attrs['fill'] || 'none',
       opacity: attrs['opacity'],
       fillRule: attrs['fillRule'],
-      strokeWidth: attrs['strokeWidth'] || this.strokeWidth
+      ...strokeProps
     }));
   }
 
