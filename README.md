@@ -6,10 +6,10 @@
 
 ## What is HugeIcons?
 
-HugeIcons is a comprehensive icon library designed for modern web and mobile applications. The free package includes 4,400+ carefully crafted icons in the Stroke Rounded style, while the pro version offers over 40,000 icons across 9 unique styles.
+HugeIcons is a comprehensive icon library designed for modern web and mobile applications. The free package includes 4,000+ carefully crafted icons in the Stroke Rounded style, while the pro version offers over 36,000 icons across 9 unique styles.
 
 ### Key Highlights
-- **4,400+ Free Icons**: Extensive collection of Stroke Rounded icons covering essential UI elements, actions, and concepts
+- **4,000+ Free Icons**: Extensive collection of Stroke Rounded icons covering essential UI elements, actions, and concepts
 - **Pixel Perfect**: Every icon is crafted on a 24x24 pixel grid ensuring crisp, clear display at any size
 - **Customizable**: Easily adjust colors, sizes, and styles to match your design needs
 - **Regular Updates**: New icons added regularly to keep up with evolving design trends
@@ -108,7 +108,6 @@ export class YourComponent {
 | `icon` | `[string, Record<string, any>][]` | Required | The main icon to display (array of SVG elements and their attributes) |
 | `size` | `number \| string` | `24` | Icon size in pixels. Must be a positive number. String values will be parsed to numbers |
 | `strokeWidth` | `number \| undefined` | `undefined` | Width of the icon strokes (works with stroke-style icons) |
-| `absoluteStrokeWidth` | `boolean` | `false` | When true, stroke width is scaled based on icon size (24px base). When false, stroke width is used as-is |
 | `altIcon` | `[string, Record<string, any>][]` | `undefined` | Alternative icon that can be used for states, interactions, or animations |
 | `showAlt` | `boolean` | `false` | When true, displays the altIcon instead of the main icon |
 | `color` | `string` | `currentColor` | Icon color (CSS color value) |
@@ -117,7 +116,6 @@ Note:
 - The component accepts all standard SVG attributes which will be passed to the root SVG element.
 - The `size` input accepts both numbers and strings, but strings will be parsed to numbers and must result in a positive number.
 - Icon arrays are tuples of `[elementName: string, attributes: Record<string, any>][]` representing SVG elements.
-- When `absoluteStrokeWidth` is true, the stroke width is scaled proportionally to the icon size (based on a 24px base size).
 
 ## Examples
 
@@ -151,8 +149,6 @@ import { NotificationIcon } from '@hugeicons/core-free-icons';
       [icon]="icon"
       [size]="32"
       color="#FF5733"
-      [strokeWidth]="2"
-      [absoluteStrokeWidth]="true"
     ></hugeicons-icon>
   `
 })
